@@ -59,6 +59,31 @@ ul {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TT Lakes Compressed';
+    src: url('TTLakesCompressed-Black.eot');
+    src: local('TT Lakes Compressed Black'), local('TTLakesCompressed-Black'),
+        url('TTLakesCompressed-Black.eot?#iefix') format('embedded-opentype'),
+        url('TTLakesCompressed-Black.woff2') format('woff2'),
+        url('TTLakesCompressed-Black.woff') format('woff'),
+        url('TTLakesCompressed-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Lakes Condensed';
+    src: url('TTLakesCondensed-Bold.eot');
+    src: local('TT Lakes Condensed Bold'), local('TTLakesCondensed-Bold'),
+        url('TTLakesCondensed-Bold.eot?#iefix') format('embedded-opentype'),
+        url('TTLakesCondensed-Bold.woff2') format('woff2'),
+        url('TTLakesCondensed-Bold.woff') format('woff'),
+        url('TTLakesCondensed-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 /* ............................................... */
 
 .wrapper {
@@ -190,9 +215,10 @@ ul {
 
 .service__title {
     font-size: 30px;
+    font-weight: 700;
     line-height: 40px;
     letter-spacing: -0.6px;
-    font-weight: 900;
+    color: #1B1C21;
 
 }
 
@@ -200,6 +226,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-weight: 500;
 }
 
 .header__about-option p {
@@ -243,6 +270,7 @@ ul {
 
 .content__text {
     font-size: 14px;
+    font-weight: 400;
     line-height: 20px;
     letter-spacing: 0.2px;
     color: #1B1C21;
@@ -262,6 +290,7 @@ ul {
 
 .content__block-1 {
     width: 288px;
+    color: #1B1C21;
 }
 
 .content__feedback {
@@ -271,19 +300,31 @@ ul {
     letter-spacing: -0.2px;
     padding-top: 14px;
     display: none;
+    font-weight: 500;
 }
 
 .swiper-slide {
     width: 190px !important;
     font-size: 13px;
+    font-family: 'TT Lakes';
     text-align: center;
-    background: #FFFFFF;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #B8FFEC;
     border-radius: 5px;
     padding: 8px 6px;
+    color: #7E7E82;
+    font-weight: 500;
+}
+
+.swiper-slide:hover {
+    background: #FFFFFF;
+    border: 1px solid #B8FFEC;
+}
+
+.active {
+    background: #FFFFFF;
+    border: 1px solid #B8FFEC;
 }
 
 .swiper-wrapper {
