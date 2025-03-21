@@ -12,7 +12,7 @@ body {
 * {
     margin: 0px;
     padding: 0px;
-}
+}     
 
 *,
 *:before,
@@ -58,6 +58,8 @@ ul {
     font-weight: 500;
     font-style: normal;
 }
+
+@import url(stylesheet.css);
 
 @font-face {
     font-family: 'TT Lakes Compressed';
@@ -227,6 +229,9 @@ ul {
     align-items: center;
     gap: 8px;
     font-weight: 500;
+
+    border: none;
+    background-color: #F8F8F8;
 }
 
 .header__about-option p {
